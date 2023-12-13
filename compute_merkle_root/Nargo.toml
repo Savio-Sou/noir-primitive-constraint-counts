@@ -1,0 +1,7 @@
+[package]
+name = "compute_merkle_root"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.19.4"
+
+[dependencies]
