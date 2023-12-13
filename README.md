@@ -9,6 +9,8 @@ Existing results were gathered using:
 
 ## Results
 
+Note that in UltraPlonk (which the default proving backend is based on as of testing), constructions could contain constant overheads shared by different sub-circuits of a circuit and are amortizable away (for instance range constraints). For two circuits `c1` and `c2`, you could see `circuit_size(c1||c2)` < `circuit_size(c1)` + `circuit_size(c2)` given the optimizations. The difference in circuit sizes of a single Keccak256 hash versus multiple as shown below is an example.
+
 | Primitive                     | Backend Circuit Size |
 |-------------------------------|----------------------|
 | keccak256                     | 54830                |
